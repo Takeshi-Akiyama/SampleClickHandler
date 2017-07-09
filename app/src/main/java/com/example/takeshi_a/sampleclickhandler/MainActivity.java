@@ -17,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 日時を表示する
+        showClock();
+
+
+    }
+
+    private void showClock() {
+
         // ボタン：日時表示ボタン
         Button buttonClock = (Button) findViewById(R.id.btn_clock);
 
@@ -28,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 showClock.setText(new Date().toString());
             }
         });
-
     }
 
 }
