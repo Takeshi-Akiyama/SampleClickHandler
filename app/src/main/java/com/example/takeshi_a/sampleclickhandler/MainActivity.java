@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         // 日時を表示する
         showClock();
-
-
     }
 
+    /**
+     * 日時を表示する
+     * 以下をlayout(activity_main.xml)に実装する
+     *  - Button : ユーザに時刻表示を促すボタン
+     *  - TextView : Buttonを押した際に時刻を表示するView
+     */
     private void showClock() {
 
         // ボタン：日時表示ボタン
